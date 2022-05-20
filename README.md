@@ -1,63 +1,51 @@
-#media3notas
-package exercicio3_02;
-import java.util.Scanner;
-public class exercicio3_02 {
+# media3notas
+# início
+Existem alunos, digite 1 para sim e 2 para nao:
 
-	public static void main(String[] args) {
-		Scanner ler = new Scanner(System.in);
-		//Setando variáveis
-		int a,RA;
-		//Imprimindo frase perguntando se existe aluno
-		System.out.printf("Existem alunos, digite 1 para sim e 2 para nao:\n");
-		a=ler.nextInt();
-		//If para acabar com o codigo caso não tenha alunos ou se tiver ele pede o RA
-		if (a==1)
-			//Imprimindo que existem alunos
-			System.out.print("Existem alunos\n");
-		    //Pedindo o RA do aluno
-		    System.out.print("Digite o RA do aluno:\n");
-		    //Lendo o numero digitado
-		    RA=ler.nextInt();
-		    if (RA==0)
-		    	//Informando que o código acabou
-		    	System.out.printf("Sistema encerrado");
-		    //Else para o codigo continuar
-		    else		    
-		    	//Pedindo a nota 1 do aluno
-		    System.out.print("Digite a primeira nota do aluno:\n");
-		    //Setando variáveis
-		    float nota1,nota2,nota3;
-		    //Lendo a nota do aluno
-		    nota1=ler.nextInt();
-		  //Pedindo a nota 2 do aluno
-		    System.out.print("Digite a segunda nota do aluno:\n");
-		    //Lendo a nota do aluno
-		    nota2=ler.nextInt();
-		  //Pedindo a nota 3 do aluno
-		    System.out.print("Digite a terceira nota do aluno:\n");
-		    nota3=ler.nextInt();
-		    //Setando variável
-		    float soma;
-		    //Dando objetivo para a variável, calcular a soma de tudo
-		    soma=nota1+nota2+nota3;
-		    //Imprimindo o valor da media
-		    System.out.printf("Media igual a %f",soma/3);
-		    //If para determinar dependendo da media se o aluno está aprovado
-		    if (soma>=8)
-		    	//Imprimindo que o aluno está aprovado
-		    	System.out.print("\nAluno aprovado");
-		    //Se não, se a media dele for maior que 6 e menor que 8 ele está de recuperação
-		    else if (soma>6 || soma<8)
-		    	//Imprimindo que ele esta de recuperação
-		    	System.out.print("\nAluno de recuperação");
-		    //Se não, se a media do aluno for menor que 6 ele está reprovado
-		    else if (soma<6)
-		    	//Imprimindo que o aluno foi reprovado
-		    	System.out.print("\nAluno reprovado");
-		    
-	
-		
+se a==1
 
-	}
+Existem alunos
 
-}
+se não
+
+Sistema encerrado
+
+Digite o RA do aluno:
+
+se RA==0
+
+Sistema encerrado
+
+se não
+
+Digite a primeira nota do aluno:
+
+ler nota correspodente
+
+Digite a segunda nota do aluno:
+
+ler nota correspondente
+
+Digite a terceira nota do aluno:
+
+ler nota correspondente
+
+Calcular a soma das notas e a média
+
+Média igual a
+
+Se média>=8
+
+aluno aprovado
+
+se não se soma>6 || soma<8
+
+aluno de recuperação
+
+se não se  soma<6
+
+Aluno reprovado
+# fim
+
+![Media3notas (1)](https://user-images.githubusercontent.com/101893557/169426060-59a2a240-acbf-4f1e-92c2-c55f8defaac9.jpeg)
+
